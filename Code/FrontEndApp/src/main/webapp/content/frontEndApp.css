@@ -1,0 +1,36 @@
+.search-form {
+    border-radius: 30px 30px 30px 30px;
+    width: 150px;
+    /*border-radius:Top-left, Top-right, Bottom-right, Bottom-left;*/
+}
+.vertical-center {
+ display: table-cell;
+ float: none;
+ vertical-align: middle;
+}
+
+// langing page image
+.img-wrapper {
+  position: relative;
+ }
+
+.img-overlay {
+  position: absolute;
+  top: 30%;
+  bottom: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 50%;
+}
+
+// landing page Member-Community-Events Buttons
+.btn.btn-md.round {
+	border-radius: 24px;
+}

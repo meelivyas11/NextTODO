@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-6"><h1>Home Page</h1></div>
+    <div class="col-md-6 text-right"><h3><a href="#!/home">Home</a></h3></div> 
+</div><br><br>
+
+<div id="GlobalWebsite" class="container text-left">
+	<form  enctype="multipart/form-data" class="form-horizontal form-group" name="chamberHomeForm" ng-submit="ChamberHomeSubmit()">
+		
+		<div class="row form-group"> 
+			<label class="control-label col-sm-2"><br><br>Home Page Image</label>
+			<div class="col-sm-2 align-middle"><img alt="img" src="data:image/png;base64,{{chamberHome.homePageImg}}"  width="150px"/></div>
+			<div class="col-sm-6"><br><br><input id="homePageImgFile" name="homePageImgFile" ng-model="homePageImgFile" type="file" class="form-control" /></div>
+		</div>
+		
+		<div class="row">
+			   <div class="col-md-10 col-md-offset-2"> 
+			   		<input type="submit" name="submit" value="Update" class="btn btn-primary btn-lg btn-block">
+		   		</div>
+   		</div>
+	</form> 
+</div>

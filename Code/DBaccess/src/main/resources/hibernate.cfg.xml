@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@//localhost:1521/orcl</property>
+        <property name="hibernate.connection.password">chamber</property>
+        <property name="hibernate.connection.username">chamber</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="show_sql">true</property>
+      
+        <mapping class="com.DBaccess.Domains.Contact"></mapping>
+        <mapping class="com.DBaccess.Domains.ChamberInfo"></mapping>
+        <mapping class="com.DBaccess.Domains.Business"></mapping>
+        <mapping class="com.DBaccess.Domains.Rotator"></mapping>
+        <mapping class="com.DBaccess.Domains.Advertisement"></mapping>
+        <mapping class="com.DBaccess.Domains.Role"></mapping>
+        <mapping class="com.DBaccess.Domains.ChamberHome"></mapping>
+    </session-factory>
+</hibernate-configuration>
